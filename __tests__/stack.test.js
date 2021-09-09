@@ -25,18 +25,16 @@ describe("My Stack", function() {
         }
         stack.push("🥑")
         stack.push(`🐟`)
-        console.log(stack)
+        // console.log(stack)
         expect(stack.top).toBe(1);
         expect(stack.items).toEqual(expected);
     })
     it("can pop off", function() {
-        stack.push("🥑")
-        stack.push(`🐟`)
-        stack.push(`🐗`)
+        stack.push("A")
+        stack.push(`B`)
+        stack.push(`C`)
 
         const popValue = stack.pop()
-        console.log(stack, popValue)
-        expect(stack.pop()).toBe(`🐗`);
-        expect(stack.top).toEqual(1);
+         expect(popValue).toEqual(`C`);
     })
 })
