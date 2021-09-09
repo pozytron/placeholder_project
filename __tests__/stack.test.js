@@ -3,7 +3,6 @@ describe("My Stack", function() {
     let stack;
     beforeEach(()=>{
         stack = new Stack();
-        // console.log("WEEEEE!!!!!!!!!!!!!!!!")
     })
     it("is created empty", function() {
         const expected = {}
@@ -36,5 +35,6 @@ describe("My Stack", function() {
 
         const popValue = stack.pop()
          expect(popValue).toEqual(`C`);
+         expect(stack.top).toEqual(1);
     })
 })
